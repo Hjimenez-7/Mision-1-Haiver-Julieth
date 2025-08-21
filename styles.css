@@ -1,0 +1,226 @@
+body{
+  margin: 0;
+  padding-top: 0.625rem;
+  background-color: rgb(158, 157, 157);
+  height: 100%;
+    background-image: url('HB.jpeg');  /* tu imagen */
+    background-size: cover;            /* llena todo el body, puede recortar */
+    background-position: center;       /* centra la imagen */
+    background-repeat: no-repeat;      /* no se repite la imagen */
+    background-attachment: fixed;      /* opcional: fija el fondo al hacer scroll */
+}
+
+.banner-envio{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.781rem 0;
+    letter-spacing: 0.063rem;
+    margin: 0;
+}
+
+/*Estilos para el navbar*/
+
+.navbar{
+    background-color: white;
+    overflow: hidden;
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 1.063rem;
+    margin: 0;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: rgb(82, 74, 81);
+    text-align: center;
+    padding: 0.875rem 1.25rem;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: rgb(240, 240, 234);
+    color:rgb(71, 78, 71);
+    font-size: 1.25rem;
+}
+
+.navbar-toggle{
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos para el sidenav */
+
+.sidenav{
+    height: 100%;
+    width: 0; /*Establecer el ancho inicial en 0*/
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(196, 206, 200);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3.75rem;
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 1.063rem;
+}
+
+.sidenav a {
+    padding: 1.25rem 1.25rem;
+    text-decoration: none;
+    font-size: 1.063rem;
+    color: rgb(71, 75, 65);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: rgb(246, 248, 246);
+    color: rgb(94, 94, 85);
+    font-size: 1.063rem;
+}
+
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 1.563rem;
+    font-size: 1.875rem;
+    margin-left: 3.125rem;
+}
+
+.titulo{
+    font-size: 3.125rem;
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    text-align: center;
+    color: rgb(65, 63, 65);
+}
+
+.contenido-parrafo{
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.presentacion-main{
+    margin: 03% 4% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+}
+
+.presentacion-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagen{
+    border-radius: 0.625rem;
+    box-shadow: 0 0 1.25rem 0.313rem rgb(18, 19, 19);
+    margin: 0.938rem;
+}
+
+.pie{
+    font-size: 0.625rem;
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    text-align: center;
+    color: rgb(126, 128, 129);
+}
+
+.h1{
+    padding-top: 0.938rem;
+    font-size: 1.563rem;
+    font-family: "New York", Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    text-align: center;
+    color: rgb(65, 63, 65);
+} 
+
+.main-contacto {
+  display: flex;                /* Activa flexbox */
+  justify-content: center;      /* Centra horizontalmente */
+  align-items: center;       /* centra verticalmente todas las secciones */
+  gap: 2.5rem;                    /* Espacio entre las secciones */
+  margin: 2.5rem auto;            /* Margen arriba y abajo */
+}
+
+.section1 {
+  text-align: center;           /* Centra imagen + texto */
+  max-width: 15.625rem;             /* Limita el ancho de cada sección */
+}
+
+.section1 .icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18.75rem; /* mismo alto para todas las cajas de imagen */
+}
+
+.main-productos {
+    display: flex;                /* Activa flexbox */
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;       /* centra verticalmente todas las secciones */
+    flex-direction: column; /* organiza las imágenes y el texto en columna */
+    gap: 2.5rem;                    /* Espacio entre las secciones */
+    margin: 2.5rem auto;
+    flex-wrap: wrap;        /* Para que en móvil se acomoden en varias filas */    /* Margen arriba y abajo */
+}
+
+.section2 {
+    text-align: center;
+    width: 37.5rem;
+    height: 18.75rem;
+}
+
+.icono2 {
+    display: flex;
+    gap: 0.625rem;          /* Espacio entre las dos imágenes */
+    justify-content: center;
+}
+
+.icono2 img {
+    width: 35%;    /* la imagen ocupa todo el ancho de la sección */
+    height: auto;   /* mantiene la proporción */
+}
+
+.icono2 p {
+    width: 100%; 
+    text-align: center;
+}
+
+.section2 .parrafo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* organiza las imágenes y el texto en columna */
+    text-align: justify;
+}
+
+@media (max-widht: 1250px){
+.navbar{
+    justify-content: center;
+}
+    .presentacion-main{
+        flex-direction: column;
+}
+    .presentacion-section{
+        width: auto;
+}
+    .main-contacto{
+        flex-direction: column;
+}
+    .section1{
+        width: auto;
+}
+    .main-productos{
+        flex-direction: column;
+}
+    .section2{
+        width: auto;
+    }
+}
